@@ -1,4 +1,4 @@
-# app.py
+
 
 from flask import Flask, render_template, redirect, url_for
 from models import db, connect_db, User
@@ -15,7 +15,7 @@ connect_db(app)
 with app.app_context():
     db.create_all()
 
-# Routes and Views
+
 @app.route('/')
 def redirect_to_users():
     return redirect(url_for('show_users'))
