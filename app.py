@@ -1,8 +1,8 @@
 
 
 from flask import Flask, render_template, redirect, url_for
-from models import db, connect_db, User
-from forms import UserForm
+from models import db, Tag, Post, PostTag, User 
+from forms import UserForm, PostForm  
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///blogly'
